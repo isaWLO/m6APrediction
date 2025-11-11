@@ -12,3 +12,5 @@ Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
 Imports: randomForest
+URL: https://github.com/isaWLO/m6APrediction
+BugReports: https://github.com/isaWLO/m6APrediction/issues

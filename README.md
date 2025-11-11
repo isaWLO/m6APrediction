@@ -1,28 +1,28 @@
----
-title: "README"
-output: github_document
----
+README
+================
 
 *M6APrediction*
 
 **Package Overview**
 
-The **m6APrediction** package provides tools for predicting **m6A RNA modification sites**  
-based on sequence and structural features using a **Random Forest model**.  
+The **m6APrediction** package provides tools for predicting **m6A RNA
+modification sites**  
+based on sequence and structural features using a **Random Forest
+model**.
 
-It includes functions for:
-- Model training and validation  
+It includes functions for: - Model training and validation  
 - Batch prediction on multiple samples (`prediction_multiple()`)  
 - Single-sequence prediction (`prediction_single()`)  
 - Performance visualization (ROC and PRC curves)
 
----
+------------------------------------------------------------------------
 
 *Installation*
 
-You can install the development version of **m6APrediction** from GitHub:
+You can install the development version of **m6APrediction** from
+GitHub:
 
-```r
+``` r
 install.packages("devtools")
 devtools::install_github("isaWLO/m6APrediction")
 ```
@@ -31,7 +31,7 @@ devtools::install_github("isaWLO/m6APrediction")
 
 library(m6APrediction)
 
-```r
+``` r
 # Load pre-trained model
 model_file <- system.file("extdata", "rf_fit.rds", package = "m6APrediction")
 ml_model <- readRDS(model_file)
@@ -57,5 +57,4 @@ example_df <- read.csv(data_file)
 multi_result <- prediction_multiple(ml_fit = ml_model, feature_df = example_df)
 
 head(multi_result)
-
 ```
