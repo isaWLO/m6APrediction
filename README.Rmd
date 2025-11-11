@@ -61,7 +61,7 @@ head(multi_result)
 
 ```
 
-## 📊 Model Performance
+*Model Performance*
 
 The trained Random Forest model achieved strong predictive performance  
 in cross-validation and testing datasets.
@@ -72,4 +72,4 @@ and precision of the model:
 ```{r, echo=FALSE, out.width="70%", fig.align='center'}
 knitr::include_graphics("man/figures/ROC_Curve.png")
 knitr::include_graphics("man/figures/PRC_Curve.png")
-
+```
