@@ -29,9 +29,10 @@ devtools::install_github("isaWLO/m6APrediction")
 
 *Example: Using m6APrediction package*
 
-library(m6APrediction)
 
 ```r
+library(m6APrediction)
+
 # Load pre-trained model
 model_file <- system.file("extdata", "rf_fit.rds", package = "m6APrediction")
 ml_model <- readRDS(model_file)
@@ -59,3 +60,16 @@ multi_result <- prediction_multiple(ml_fit = ml_model, feature_df = example_df)
 head(multi_result)
 
 ```
+
+## 📊 Model Performance
+
+The trained Random Forest model achieved strong predictive performance  
+in cross-validation and testing datasets.
+
+Below are the ROC and PRC curves that illustrate the classification accuracy  
+and precision of the model:
+
+```{r, echo=FALSE, out.width="70%", fig.align='center'}
+knitr::include_graphics("man/figures/ROC_Curve.png")
+knitr::include_graphics("man/figures/PRC_Curve.png")
+
