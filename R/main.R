@@ -2,6 +2,7 @@
 #' @description Converts a character vector of DNA strings into a data frame where each nucleotide becomes a factor column. This is useful for preparing sequence data for machine learning models.
 #' @param dna_strings A character vector where each element is a DNA sequence (e.g., "ATCGG").
 #' @return A data frame. Each column corresponds to a nucleotide position (named "nt_pos1", "nt_pos2", ...) and contains factors with levels "A", "T", "C", "G".
+#' @export
 #' @examples
 #' \dontrun{
 #' dna_sequences <- c("ATCG", "GCTA")
